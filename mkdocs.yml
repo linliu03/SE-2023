@@ -8,6 +8,7 @@ repo_url: 'https://github.com/LinLiuLab/SE-2023'
 
 nav:
   - 课程概述: index.md
+  - FAQ: faq.md
 
 theme:
   name: material
