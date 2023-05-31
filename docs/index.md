@@ -102,8 +102,8 @@
 ## 作业与评分
 
  本课程的分数构成为：平时表现 5 分 + 基础知识 10 分 + 单元练习 30 分 + 团队项目 55 分 = 100 分
- 
-??? info "具体分数构成" ：
+
+??? info "具体分数构成"
     === "平时表现 5 分"
         - 课堂签到、技术分享等 3 分
         - 报名参加清华软件创新创意大赛 1分
@@ -140,3 +140,17 @@
 
 ## 参考资料
 
+1. 软件工程与代码设计
+    * [Software Engineering at Google](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2Fsoftware_engineering_at_google_extract-1622201647282.pdf&dl=1)
+    * [《重构：改善既有代码的设计(第2版)》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8A%E9%87%8D%E6%9E%84%EF%BC%9A%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1(%E7%AC%AC2%E7%89%88)%E3%80%8B.pdf)
+    * [《设计模式：可复用面向对象软件的基础》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8A%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%8F%AF%E5%A4%8D%E7%94%A8%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%9F%BA%E7%A1%80%E3%80%8B.pdf)
+    * [《Head First设计模式(中文版)》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8AHead%20First%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F(%E4%B8%AD%E6%96%87%E7%89%88)%E3%80%8B.pdf&dl=1)
+    * [邹欣 - 构建之法：现代软件工程 (2017, 人民邮电出版社) ](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E9%82%B9%E6%AC%A3%20-%20%E6%9E%84%E5%BB%BA%E4%B9%8B%E6%B3%95%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%20(2017%2C%20%E4%BA%BA%E6%B0%91%E9%82%AE%E7%94%B5%E5%87%BA%E7%89%88%E7%A4%BE)%20-%20libgen.li.pdf)
+2. 编程语言与技术
+    * [《JavaScript权威指南 (英文第七版)》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8AJavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%20(%E8%8B%B1%E6%96%87%E7%AC%AC%E4%B8%83%E7%89%88)%E3%80%8B.pdf&dl=1)
+    * [《MySQL8 Cookbook》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8AMySQL8%20Cookbook%E3%80%8B.pdf)
+    * [《NGINX Cookbook(2022)》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8ANGINX%20Cookbook(2022)%E3%80%8B.pdf)
+    * [《Pro Git》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8APro%20Git%E3%80%8B2022.3.17.pdf)
+3. 个人发展与职业技能
+    * [《高效能程序员的修炼》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8A%E9%AB%98%E6%95%88%E8%83%BD%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%BF%AE%E7%82%BC%E3%80%8B.pdf)
+    * [《软技能：代码之外的生存指南》](https://cloud.tsinghua.edu.cn/d/196dcecb6110455db478/files/?p=%2F%E3%80%8A%E8%BD%AF%E6%8A%80%E8%83%BD%EF%BC%9A%E4%BB%A3%E7%A0%81%E4%B9%8B%E5%A4%96%E7%9A%84%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%E3%80%8B.pdf)
