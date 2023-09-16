@@ -22,10 +22,28 @@ theme:
   custom_dir: 'theme-override/'
   features:
     - navigation.instant
+    - navigation.footer
     - navigation.expand
-    - header.autohide
     - navigation.top
+    - navigation.path
+    - navigation.indexes
+    - header.autohide
+    - content.code.copy
+    - search.share
+    - search.suggest
   favicon: images/laptop.png
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
 
 
 # Strategy: Use an absolute path
@@ -40,6 +58,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -54,12 +77,16 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - 'https://cdn.jsdelivr.net/npm/wavedrom@2.1.2/wavedrom.unpkg.js'
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
