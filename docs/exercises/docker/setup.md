@@ -31,7 +31,7 @@ SQLite 是一个进程内的轻量级嵌入式数据库，**它的数据库就�
 $ conda create -n SimpleBBS python=3.8
 # 激活虚拟环境
 $ conda activate SimpleBBS
-# 使用 pip 安装依赖
+# 使用 pip 安装依赖，在 backend 目录下执行
 $ pip install -r requirements.txt
 # 如果安装失败，可以改用清华镜像源
 $ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
