@@ -38,6 +38,13 @@
 
 经过正确配置 autoflake、autopep8、isort 对代码自动格式化后，执行 flake8 检查代码风格时，**不会输出任何错误或警告**
 ## 单元测试
+测试时请使用下面的命令
+
+```bash
+# 在 backend 目录下
+python manage.py test --filter test_basic
+```
+
 补充基础函数和单元测试分别占 50%
 
 在该部分中，同学们需要以**测试驱动开发的方式**补完下列函数，并使用 unittest 补充相应的单元测试
@@ -79,18 +86,8 @@
     
     请在 `tests/test_basic.py` 的 `TODO` 处补充相应的单元测试，并使得行覆盖率不低于 <span style="color: red">80％</span>，在文档中说明的所有测试用例应在测试代码中有完整体现。
 
-测试覆盖率时请使用下面的命令
-
-```bash
-# 在 backend 目录下
-python manage.py test --filter test_basic
-```
 
 ## 集成测试
-在该部分中，同学们需要为 SimpleBBS 添加集成测试，请补充 `tests/test_api.py` 中的 `TODO` 部分为注册路由、登录路由和登出路由添加测试，提供了部分注册路由测试代码供同学们参考。
-
-同学们不需要自己构造测试样例，只需要运行[环境搭建](./setup.md)中提到的 `python manage.py init_db` 来填充测试数据即可，评测时也会使用同样的数据进行测试。
-
 测试时请使用下面的命令
 
 ```bash
@@ -98,17 +95,23 @@ python manage.py test --filter test_basic
 python manage.py test --filter test_api
 ```
 
+在该部分中，同学们需要为 SimpleBBS 添加集成测试，请补充 `tests/test_api.py` 中的 `TODO` 部分为注册路由、登录路由和登出路由添加测试，提供了部分注册路由测试代码供同学们参考。
+
+同学们不需要自己构造测试样例，只需要运行[环境搭建](./setup.md)中提到的 `python manage.py init_db` 来填充测试数据即可，评测时也会使用同样的数据进行测试。
+
+
 ## 端到端测试
-在该部分中，同学们需要在 `tests/test_e2e.py` 中使用 unittest 框架和 selenium 为 SimpleBBS 补充端到端测试，selenium 提供了自动化控制浏览器的能力，同学们需要使用 selenium 控制浏览器实现用户的登录、发帖、更新帖子、删除帖子操作，在 `tests/test_e2e.py` 中提供了实现自动登录的部分供同学们参考。
-
-由于 selenium 需要用到 WebDriver 控制浏览器，可在如下链接下载对应浏览器类型及版本的 WebDriver ，并放置于 `drivers` 目录，将 `tests/test_e2e.py` 中的 `DRIVER_PATH` 变量指向 WebDriver 的实际路径，如果出现错误请首先仔细阅读 [环境搭建](./setup.md) 章节的内容。 
-
 测试时请使用下面的命令
-
 ```bash
 # 在 backend 目录下
 python manage.py test --filter test_e2e
 ```
+
+在该部分中，同学们需要在 `tests/test_e2e.py` 中使用 unittest 框架和 selenium 为 SimpleBBS 补充端到端测试，selenium 提供了自动化控制浏览器的能力，同学们需要使用 selenium 控制浏览器实现用户的登录、发帖、更新帖子、删除帖子操作，在 `tests/test_e2e.py` 中提供了实现自动登录的部分供同学们参考。
+
+由于 selenium 需要用到 WebDriver 控制浏览器，可在如下链接下载对应浏览器类型及版本的 WebDriver ，并放置于 `drivers` 目录，将 `tests/test_e2e.py` 中的 `DRIVER_PATH` 变量指向 WebDriver 的实际路径，如果出现错误请首先仔细阅读 [环境搭建](./setup.md) 章节的内容。 
+
+
 
 
 
