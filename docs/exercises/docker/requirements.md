@@ -82,6 +82,8 @@
 ## 集成测试
 在该部分中，同学们需要为 SimpleBBS 添加集成测试，请补充 `tests/test_api.py` 中的 `TODO` 部分为注册路由、登录路由和登出路由添加测试，提供了部分注册路由测试代码供同学们参考。
 
+同学们不需要自己构造测试样例，只需要运行[环境搭建](./setup.md)中提到的 `python manage.py init_db` 来填充测试数据即可，评测时也会使用同样的数据进行测试。
+
 ## 端到端测试
 在该部分中，同学们需要在 `tests/test_e2e.py` 中使用 unittest 框架和 selenium 为 SimpleBBS 补充端到端测试，selenium 提供了自动化控制浏览器的能力，同学们需要使用 selenium 控制浏览器实现用户的登录、发帖、更新帖子、删除帖子操作，在 `tests/test_e2e.py` 中提供了实现自动登录的部分供同学们参考。
 
