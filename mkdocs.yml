@@ -18,6 +18,7 @@ nav:
       - 作业要求: exercises/docker/requirements.md
       - 提交说明: exercises/docker/submit.md
       - 清软论坛说明: exercises/docker/bbs.md
+      - FAQ: exercises/docker/faq.md
     - UML: exercises/uml.md
   - FAQ: faq.md
 
