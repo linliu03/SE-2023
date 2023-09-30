@@ -111,11 +111,9 @@ python manage.py test --filter test_e2e
 由于 selenium 需要用到 WebDriver 控制浏览器，可在如下链接下载对应浏览器类型及版本的 WebDriver ，并放置于 `drivers` 目录，将 `tests/test_e2e.py` 中的 `DRIVER_PATH` 变量指向 WebDriver 的实际路径，如果出现错误请首先仔细阅读 [环境搭建](./setup.md) 章节的内容。 
 
 
-
-
-
 !!! question "注意事项"
     端到端测试需要使用浏览器和前端，但是由于助教已经在测试文件中启动了前端，所以你并不需要手动启动。
+    为了进行端到端的测试，后端同样会使用 8000 端口。因此，在开始测试之前，请确保**关闭**之前启动的后端服务，以避免**端口冲突**。
 
 !!! note "Windows 用户注意事项"
     使用 Windows 的同学在运行端到端测试时可能会出现如下提示
