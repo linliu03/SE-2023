@@ -97,8 +97,7 @@ python manage.py test --filter test_api
 
 在该部分中，同学们需要为 SimpleBBS 添加集成测试，请补充 `tests/test_api.py` 中的 `TODO` 部分为注册路由、登录路由和登出路由添加测试，提供了部分注册路由测试代码供同学们参考。
 
-同学们不需要自己构造测试样例，只需要运行[环境搭建](./setup.md)中提到的 `python manage.py init_db` 来填充测试数据即可，评测时也会使用同样的数据进行测试。
-
+同学们不需要自己构造测试样例，测试中已经构造了一个用户，具体信息请阅读 `tests/test_api.py` 中 `APITestCase` 类的 `setUp` 函数。
 
 ## 端到端测试
 测试时请使用下面的命令
