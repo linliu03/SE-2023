@@ -80,7 +80,7 @@ $ python manage.py migrate --settings=app.settings_prod
 
 使用下列命令启动 Gunicorn 服务器
 ```shell
-$ DJANGO_MODULE_SETTINGS=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-level=debug app.wsgi
+$ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-level=debug app.wsgi
 ```
 
 
