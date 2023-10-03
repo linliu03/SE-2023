@@ -87,25 +87,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
 
 ## API 文档
 
-1. 测试 API-无身份验证
-    ```
-    Method: GET
-    URL: /api/v1/hello
-    Response:
-    {
-        'message': 'Hello world'
-    }
-    ```
-2. 测试API-有身份验证
-    ```
-    Method: GET
-    URL: /api/v1/hello-user
-    Response:
-    {
-        'message': 'Hello world, USERNAME' # USERNAME是登录者的学号
-    }
-    ```
-3. 注册
+1. 注册
     ```
     Method: POST
     URL: /api/v1/register
@@ -123,7 +105,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         'message': 'ok'
     }
     ```
-4. 登录
+2. 登录
     ```
     Method: PATCH
     URL: /api/v1/login
@@ -140,7 +122,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         'jwt': ''
     }
     ```
-5. 登出
+3. 登出
     ```
     Method: PATCH
     URL: /api/v1/logout
@@ -150,7 +132,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
     }
 
     ```
-6. 获取当前登录账号个人信息
+4. 获取当前登录账号个人信息
     ```
     Method: GET
     URL: /api/v1/user
@@ -165,7 +147,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         "created": "2020-08-14T23:15:49+08:00" # 创建时间
     }
     ```
-7. 获取用户昵称
+5. 获取用户昵称
     ```
     Method: GET
     URL: /api/v1/user/:userId
@@ -176,7 +158,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         "created": "2020-08-14T23:15:49+08:00"
     }
     ```
-8. 获取帖子列表
+6. 获取帖子列表
     ```
     Method: GET
     URL: /api/v1/post
@@ -209,7 +191,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         ]
     }
     ```
-9. 发帖
+7. 发帖
     ```
     Method: POST
     URL: /api/v1/post
@@ -224,7 +206,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         'postId': 1
     }
     ```
-10. 编辑当前用户发布的帖子
+8. 编辑当前用户发布的帖子
     ```
     Method: PUT
     URL: /api/v1/post/:postId
@@ -239,7 +221,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         'message': 'ok'
     }
     ```
-11. 获取帖子详情与回帖列表
+9. 获取帖子详情与回帖列表
     ```
     Method: GET
     URL: /api/v1/post/:postId
@@ -278,7 +260,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         ]
     }
     ```
-12. 回帖
+10. 回帖
     ```
     Method: POST
     URL: /api/v1/post/:postId/reply
@@ -293,7 +275,7 @@ $ DJANGO_SETTINGS_MODULE=app.settings_prod gunicorn -w4 -b 0.0.0.0:8000 --log-le
         'message': 'ok'
     }
     ```
-13. 编辑当前用户发布的回帖
+11. 编辑当前用户发布的回帖
     ```
     Method: PUT
     URL: /api/v1/post/:postId/reply/:replyId
