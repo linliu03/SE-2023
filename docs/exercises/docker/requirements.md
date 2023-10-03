@@ -146,7 +146,7 @@ python manage.py test --filter test_e2e
     - nginx 与论坛后端处于⼀个 network，论坛后端与数据库处于⼀个 network。也即通过 nginx 所在容器无法访问数据库容器；
     - 仅 nginx 容器将端口映射给宿主机，端口号为 8000；
     - MySQL 镜像需要指定 `/home/ubuntu/mysql/` 文件夹为持久化存储 Volume，将镜像内 `/var/lib/mysql` 目录挂载到宿主机的 `/home/ubuntu/mysql/` 目录；
-    - 确保后端服务已正确连接至 MySQL 数据库而非 SQLite 数据库。在 `docker-compose.yaml`` 文件中，必须确保后端容器遵循[环境搭建](./bbs.md)章节中**部署**部分的指引，进行数据库迁移并启动应用。
+    - 确保后端服务已正确连接至 MySQL 数据库而非 SQLite 数据库。在 `docker-compose.yaml` 文件中，必须确保后端容器遵循[环境搭建](./bbs.md)章节中**部署**部分的指引，进行数据库迁移并启动应用。
     - 你的服务需要至少持续工作至作业截止日期后 10 天。如果无法访问，助教会与你取得联系，请保持联系方式的畅通。
 
 !!! tip "提示"
