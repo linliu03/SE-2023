@@ -1,6 +1,6 @@
 # 清软论文说明
 
-本项目后端部分依赖 `Django 4.1.4` 及 `Python 3.8.x`，前端部分依赖 `React` 和 `node 18.x.x`
+本项目后端部分依赖 `Django 4.2.5` 及 `Python 3.8.x`，前端部分依赖 `React` 和 `node 18.x.x`
 
 项目分为前端和后端，前端代码在 `frontend` 目录下，后端代码在 `backend` 目录下
 
@@ -75,7 +75,7 @@ $ python manage.py test --filter test_e2e
 $ python manage.py migrate --settings=app.settings_prod
 ```
 
-## Gunicorn 启动
+### Gunicorn 启动
 在 `backend` 目录下。
 
 使用下列命令启动 Gunicorn 服务器

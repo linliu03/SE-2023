@@ -131,7 +131,7 @@ python manage.py test --filter test_e2e
     - 通过你的服务器 `ip:8000` 可以访问到论坛前端并正常进行各项操作；
     - 通过你的服务器 `ip:8000/api/v1` 可以直接访问后端的各项 API；
 3. 其他要求
-    - 你的 Python 版本需要恰好为 3.8.x，你的Nginx版本为 latest，MySQL 版本恰好为8.1；
+    - 你的 Python 版本需要恰好为 3.8.x，你的Nginx版本为 latest，MySQL 版本恰好为 8.1；
     - 各个 service 之间的依赖关系应当合理；
     - 清软论坛镜像 container 名称为 app，nginx 镜像 container 名称为 nginx，MySQL 镜像的container 名称为 mysql；（你可以在 docker-compose 配置中指定 container name）
     - 你的数据库使用账号 root（默认值），其密码为你的学号，数据库名称为 thss，使用端口3306（默认值）。请注意 MySQL 默认镜像的时区为 UTC，字符集是 latin1，你也需要进行调整。可以通过在 docker-compose 中指定下述值实现：
@@ -146,6 +146,7 @@ python manage.py test --filter test_e2e
     - nginx 与论坛后端处于⼀个 network，论坛后端与数据库处于⼀个 network。也即通过 nginx 所在容器无法访问数据库容器；
     - 仅 nginx 容器将端口映射给宿主机，端口号为 8000；
     - MySQL 镜像需要指定 `/home/ubuntu/mysql/` 文件夹为持久化存储 Volume，将镜像内 `/var/lib/mysql` 目录挂载到宿主机的 `/home/ubuntu/mysql/` 目录；
+    - 确保后端服务已正确连接至 MySQL 数据库。在 `docker-compose.yaml`` 文件中，必须确保后端容器遵循[环境搭建](./bbs.md)章节中**部署**部分的指引，进行数据库迁移并启动应用。
     - 你的服务需要至少持续工作至作业截止日期后 10 天。如果无法访问，助教会与你取得联系，请保持联系方式的畅通。
 
 !!! tip "提示"
