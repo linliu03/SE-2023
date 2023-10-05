@@ -54,8 +54,8 @@ python manage.py test --filter test_basic
     * `username`: 必填，用户账号
     * `password`: 必填，用户密码
     * `nickname`: 必填，用户昵称
-    * `url`: 必填，用户个人地址链接
     * `mobile`: 必填，手机号
+    * `url`: 必填，用户个人地址链接
     * `magic_number`: 选填，用户喜欢的幸运数字
 
     **参数要求：**
