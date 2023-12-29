@@ -20,6 +20,8 @@ nav:
       - 清软论坛说明: exercises/docker/bbs.md
       - FAQ: exercises/docker/faq.md
     - UML: exercises/uml.md
+  - 大作业:
+    - 团队项目交付要求: project/submit.md
 
 theme:
   name: material
